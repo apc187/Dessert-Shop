@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Dessert Shop UI</title>
+  <style>
+    body { font-family: 'Red Hat Text', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#fcf8f5] p-6 md:p-12">
+
+  <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
+    
+    <div class="lg:w-3/4">
+      <h1 class="text-4xl font-bold mb-10 text-[#260f08]">Desserts</h1>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+        
+        <div class="flex flex-col">
+          <div class="relative flex flex-col items-center">
+            <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle" class="rounded-xl w-full border-2 border-transparent hover:border-[#c73b0f] transition-all">
+            <button class="absolute -bottom-6 flex items-center gap-2 bg-white border border-[#ad8a85] px-7 py-3 rounded-full shadow-sm hover:border-[#c73b0f] hover:text-[#c73b0f] transition-all">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" class="w-5">
+              <span class="font-bold text-sm text-[#260f08] hover:text-[#c73b0f]">Add to Cart</span>
+            </button>
+          </div>
+          <div class="mt-10">
+            <p class="text-[#ad8a85] text-sm">Waffle</p>
+            <h3 class="font-bold text-[#260f08] text-lg">Waffle with Berries</h3>
+            <p class="text-[#c73b0f] font-bold text-lg mt-1">$6.50</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="relative flex flex-col items-center">
+            <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Creme Brulee" class="rounded-xl w-full border-2 border-transparent hover:border-[#c73b0f] transition-all">
+            <button class="absolute -bottom-6 flex items-center gap-2 bg-white border border-[#ad8a85] px-7 py-3 rounded-full shadow-sm hover:border-[#c73b0f] hover:text-[#c73b0f] transition-all">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" class="w-5">
+              <span class="font-bold text-sm text-[#260f08] hover:text-[#c73b0f]">Add to Cart</span>
+            </button>
+          </div>
+          <div class="mt-10">
+            <p class="text-[#ad8a85] text-sm">Crème Brûlée</p>
+            <h3 class="font-bold text-[#260f08] text-lg">Vanilla Bean Crème Brûlée</h3>
+            <p class="text-[#c73b0f] font-bold text-lg mt-1">$7.00</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="relative flex flex-col items-center">
+            <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron" class="rounded-xl w-full border-2 border-transparent hover:border-[#c73b0f] transition-all">
+            <button class="absolute -bottom-6 flex items-center gap-2 bg-white border border-[#ad8a85] px-7 py-3 rounded-full shadow-sm hover:border-[#c73b0f] hover:text-[#c73b0f] transition-all">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" class="w-5">
+              <span class="font-bold text-sm text-[#260f08] hover:text-[#c73b0f]">Add to Cart</span>
+            </button>
+          </div>
+          <div class="mt-10">
+            <p class="text-[#ad8a85] text-sm">Macaron</p>
+            <h3 class="font-bold text-[#260f08] text-lg">Macaron Mix of Five</h3>
+            <p class="text-[#c73b0f] font-bold text-lg mt-1">$8.00</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="lg:w-1/4 bg-white p-6 rounded-xl h-fit shadow-sm">
+      <h2 class="text-[#c73b0f] text-2xl font-bold mb-4">Your Cart (0)</h2>
+      <div class="flex flex-col items-center py-10">
+        <img src="./assets/images/illustration-empty-cart.svg" alt="Empty Cart" class="mb-4">
+        <p class="text-[#ad8a85] font-semibold text-sm">Your added items will appear here</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
